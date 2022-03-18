@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/More about backgrounds/Designing Tiles.html";
+chmtop.c2wtopf.pageid = "dadiospice/001_advanced use/more about backgrounds/designing tiles.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20about%20backgrounds%2FDesigning%20Tiles.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20about%20backgrounds%2FDesigning%20Tiles.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20backgrounds%2Fdesigning%20tiles.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20backgrounds%2Fdesigning%20tiles.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -41,7 +41,7 @@ especially if your target device is something other then the PC or
 Mac, or if you are planning on scaling them up or down. Let's start
 by looking at an image of a typical problem that can occur when
 using tiles in your game and then having the view scaled:
-<img class="center" src="TileError_Image.png"> The image above
+<img class="center" src="tileerror_image.png"> The image above
 shows the kind of visuals you can expect to get if you zoom in on a
 typical tileset that has been created with a space between tiles.
 Now, most tiles are like this, with spaces around the edges, or
@@ -54,7 +54,7 @@ Studio's</i> fault, after all... if it allows you to scale the
 tiles, it should work! Well, it does work, but only if you know how
 the graphics are drawn and prepare your resources accordingly.
 Let's take a look at a couple of normal tile sets that you might
-create: <img class="center" src="TileSet_Image.png"> These are the
+create: <img class="center" src="tileset_image.png"> These are the
 most common ways that people create tile sets - either all jammed
 up together or with little spaces separating them out. Now for a
 non-scaling game, this is normally fine and you can happily predict
@@ -66,7 +66,7 @@ with the red line around the tile showing where the U,V coordinates
 are mapped to (The letters "U" and "V" are used to describe the 2D
 texture mesh because "X", "Y" and "Z" are already used to describe
 room and object spatial coordinates): <img class="center" src=
-"UV_Map_Image.png"> As you can see it picks the center of the texel
+"uv_map_image.png"> As you can see it picks the center of the texel
 (a texel is just a pixel in a texture map) to map directly when
 drawing the image in the room. Now 1:1, this is all well and
 good... but what will happen when we scale this tile down? The
@@ -77,7 +77,7 @@ draw based on the available pixel centers. So, if we are "just"
 moving into a new screen pixel then, because the graphics drivers
 use the center of the pixel to decide what to draw with, it'll pick
 a texel <i>surrounding</i> the tile, not a texel on the tile
-itself. <img class="center" src="UV_Map_Small_Image.png"> Shown
+itself. <img class="center" src="uv_map_small_image.png"> Shown
 above is a tile being draw scaled down into 6 screen pixels, and
 this shows that when you overlap a little into the next screen
 pixel, the graphics driver has to make a choice to either drop that
@@ -100,8 +100,8 @@ to scale without problems as it forces the hardware to get the last
 row of pixels no matter what. However, when using a texture pages
 in <i>GameMaker: Studio</i> with tiles, you must "fake" this
 yourself (for more information on texture pages see <a href=
-"Texture%20Pages.html">More About Backgrounds: Texture Pages</a>).
-<img class="center" src="Tile_Clamped_Image.png"> Shown above is a
+"texture%20pages.html">More About Backgrounds: Texture Pages</a>).
+<img class="center" src="tile_clamped_image.png"> Shown above is a
 "fixed" tile set and you can see it now has a repeated section
 around each tile meaning that when the hardware overruns, it will
 always pick the last texel from the tile rather than one of the
@@ -114,7 +114,7 @@ if necessary. The space between tiles is optional and may help you
 keep track of the tiles better within the tile sheet, but that's up
 to you. The image below shows how this would finally look when
 loaded into <i>GameMaker: Studio</i>: <img class="center" src=
-"Tileset_In_Editor.png"> <b>Note:</b> All the tiles used on this
+"tileset_in_editor.png"> <b>Note:</b> All the tiles used on this
 page courtesy of <a href=
 "http://www.lostgarden.com/2006/07/more-free-game-graphics.html">Lost
 Garden</a>.</p>
@@ -127,7 +127,7 @@ Garden</a>.</p>
 Backgrounds</a></div>
 
 <div style="float:right">Next: <a href=
-"Texture%20Pages.html">Texture Pages</a></div>
+"texture%20pages.html">Texture Pages</a></div>
 </div>
 
 <h5>© Copyright YoYo Games Ltd. 2015 All Rights Reserved</h5>

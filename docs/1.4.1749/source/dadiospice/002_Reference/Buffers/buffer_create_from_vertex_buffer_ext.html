@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Buffers/buffer_create_from_vertex_buffer_ext.html";
+chmtop.c2wtopf.pageid = "dadiospice/002_reference/buffers/buffer_create_from_vertex_buffer_ext.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FBuffers%2Fbuffer_create_from_vertex_buffer_ext.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FBuffers%2Fbuffer_create_from_vertex_buffer_ext.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_reference%2Fbuffers%2Fbuffer_create_from_vertex_buffer_ext.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_reference%2Fbuffers%2Fbuffer_create_from_vertex_buffer_ext.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -87,12 +87,12 @@ below).</td>
 
 <p>You use this function to allocate a portion of memory as a
 buffer in your game filled with the data from a previously created
-<a href="../Shaders/Primitive%20Building/index.html">vertex
+<a href="../shaders/primitive%20building/index.html">vertex
 buffer</a>. The function returns a unique <i>buffer id</i> that
 should be stored in a variable and used for all further function
 calls to the buffer. The function takes the id for the vertex
 buffer to use (as returned by the function <a href=
-"../Shaders/Primitive%20Building/vertex_create_buffer.html"><tt>vertex_create_buffer()</tt></a>,
+"../shaders/primitive%20building/vertex_create_buffer.html"><tt>vertex_create_buffer()</tt></a>,
 for example) with the following constants being used to define the
 buffer type:<br>
 <br></p>
@@ -184,7 +184,7 @@ data that you wish to copy into the newly created buffer. The start
 vertex can be anywhere between 0 and the number of vertices -1, and
 then you give the number of vertices from that point to copy. You
 can use the function <a href=
-"../Shaders/Primitive%20Building/vertex_get_number.html"><tt>vertex_get_number()</tt></a>
+"../shaders/primitive%20building/vertex_get_number.html"><tt>vertex_get_number()</tt></a>
 on the vertex buffer to get the total number of vertices
 stored.<br>
 <br>
@@ -195,7 +195,7 @@ buffer that you have created you should free it up again using
 <a href="buffer_delete.html"><tt>buffer_delete</tt></a>. Also note
 that the vertex buffer used to create the new buffer is not removed
 from memory either and you should use the function <a href=
-"../Shaders/Primitive%20Building/vertex_delete_buffer.html"><tt>vertex_delete_buffer()</tt></a>
+"../shaders/primitive%20building/vertex_delete_buffer.html"><tt>vertex_delete_buffer()</tt></a>
 when it is no longer required.</i><br>
 <br></p>
 

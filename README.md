@@ -42,8 +42,10 @@ You can use a URL rewriter extension to redirect old bookmarked URLs to your own
 Here's some search terms to try:
 
 - https://chrome.google.com/webstore/search/rewrite%20host
-- https://chrome.google.com/webstore/search/rewrite%20url?hl=en
+- https://chrome.google.com/webstore/search/rewrite%20url
 - https://chrome.google.com/webstore/search/url%20redirect
+
+_The extension [Requestly](https://chrome.google.com/webstore/detail/requestly-modify-headers/mdnleldcmiljblolnjhpnblkcekpdkpa) does the job, just make a "Replace String" rule. The extension has a lot of login nags and ad stuff though._
 
 Once you've got your extension set up, redirect this:
 
@@ -60,3 +62,5 @@ Test page to try redirects:
 It should take you here:
 
 [https://files.codemuffin.com/gamemaker/docs/1.4.1749/dadiospice/001_advanced use/more about sprites/editing collision masks.html](https://files.codemuffin.com/gamemaker/docs/1.4.1749/dadiospice//001_advanced%20use/more%20about%20sprites/editing%20collision%20masks.html)
+
+Note that if you've already visited a URL and got redirected to the new docs site, you browser will have cached that rediect. To fix it, just open developer tools (F12), click the Network tab, check "Disable cache", then enter the URL while dev tools is still open.

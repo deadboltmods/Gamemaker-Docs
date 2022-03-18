@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/More About Async Events/Steam.html";
+chmtop.c2wtopf.pageid = "dadiospice/001_advanced use/more about async events/steam.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FSteam.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FSteam.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fsteam.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fsteam.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -32,9 +32,9 @@ if (window.name != "content")
 any Steam API call-backs received.</h2>
 
 <p>This event can only be triggered by the <a href=
-"../../002_Reference/Steam%20API/index.html">Steam API</a>
+"../../002_reference/steam%20api/index.html">Steam API</a>
 functions and will return a <a href=
-"../../002_Reference/Data%20Structures/DS%20Maps/index.html"><tt>ds_map</tt></a>
+"../../002_reference/data%20structures/ds%20maps/index.html"><tt>ds_map</tt></a>
 stored in the variable <tt>async_load</tt>, containing different
 key/value pairs depending on the call-back from the function that
 has triggered the event. The map will always contain the key
@@ -86,9 +86,9 @@ below for the details)</li>
 
 <p>When using the Steam functions for uploading a leaderboard
 (either <a href=
-"../../002_Reference/Steam%20API/steam_upload_score.html"><tt>steam_upload_score()</tt></a>
+"../../002_reference/steam%20api/steam_upload_score.html"><tt>steam_upload_score()</tt></a>
 or <a href=
-"../../002_Reference/Steam%20API/steam_upload_score_buffer.html"><tt>
+"../../002_reference/steam%20api/steam_upload_score_buffer.html"><tt>
 steam_upload_score_buffer()</tt></a>) the returned <tt>ds_map</tt>
 will have the following key/value pairs:</p>
 
@@ -136,11 +136,11 @@ functions.<br>
 
 <p>When using the Steam functions for downloading a leaderboard
 (<a href=
-"../../002_Reference/Steam%20API/steam_download_scores.html"><tt>steam_download_scores()</tt></a>,
+"../../002_reference/steam%20api/steam_download_scores.html"><tt>steam_download_scores()</tt></a>,
 <a href=
-"../../002_Reference/Steam%20API/steam_download_scores_around_user.html">
+"../../002_reference/steam%20api/steam_download_scores_around_user.html">
 <tt>steam_download_scores_around_user()</tt></a> or <a href=
-"../../002_Reference/Steam%20API/steam_download_friends_scores.html">
+"../../002_reference/steam%20api/steam_download_friends_scores.html">
 <tt>steam_download_friends_scores()</tt></a>) the returned
 <tt>ds_map</tt> will have the following key/value pairs:</p>
 
@@ -179,7 +179,7 @@ ds_map, which will either contain the key "default" (signifying
 that no results are contained within) or the key "entries", which
 you can then get the value of. this returned value for "entries"
 will be a <a href=
-"../../002_Reference/Data%20Structures/DS%20Lists/index.html"><tt>ds_list</tt></a>
+"../../002_reference/data%20structures/ds%20lists/index.html"><tt>ds_list</tt></a>
 containing each of the ranks from the leaderboard, where each entry
 in the list will itself reference another <tt>ds_map</tt> which
 will contain the keys "name", "score" and "rank", and it may also
@@ -264,7 +264,7 @@ variable) we then continue to process the data. The first thing we
 do is parse the <tt>async_load</tt> ds_map for the key "entries"
 which will contain a JSON object containing the leaderboard data.
 This JSON object is then decoded (see <a href=
-"../../002_Reference/File%20Handling/json_decode.html"><tt>json_decode</tt></a>)
+"../../002_reference/file%20handling/json_decode.html"><tt>json_decode</tt></a>)
 as another ds_map, and this new map id is stored in the variable
 "map".<br>
 <br>
@@ -281,7 +281,7 @@ then we also parse that and send it to the compiler console for
 debugging, before destroying the buffer and then continuing on to
 destroy the map. Note that if the "data" key is included, it needs
 to be decoded using the <a href=
-"../../002_Reference/Buffers/buffer_base64_decode.html"><tt>buffer_base64_decode()</tt></a>
+"../../002_reference/buffers/buffer_base64_decode.html"><tt>buffer_base64_decode()</tt></a>
 before it can be correctly read.<br>
 <br>
 Once the loop has finished, the entries list is destroyed as is the
@@ -292,7 +292,7 @@ map that it was taken from. There is no need to destroy the
 <h3 class="studio">Downloading UGC</h3>
 
 <p>When using the Steam functions for downloading <a href=
-"../../002_Reference/Steam%20API/User%20Generated%20Content/index.html">
+"../../002_reference/steam%20api/user%20generated%20content/index.html">
 User Generated Content (UGC)</a>, a number of them will trigger
 this event. However, each function will generate an
 <tt>async_load</tt> ds_map with differeing key/value pairs
@@ -320,7 +320,7 @@ listed at the top of this page):</p>
 
 <li>"<b>published_file_id</b>" - the ID of the newly installed UGC
 item (you can use the function <a href=
-"../../002_Reference/Steam%20API/User%20Generated%20Content/steam_ugc_get_item_install_info.html">
+"../../002_reference/steam%20api/user%20generated%20content/steam_ugc_get_item_install_info.html">
 <tt>steam_ugc_get_item_install_info()</tt></a> to get the path to
 the installed item)</li>
 
@@ -376,7 +376,7 @@ of the un-subscribed item</li>
 <div style="float:left">Back: <a href="index.html">More About Async
 Events</a></div>
 
-<div style="float:right">Next: <a href="Social.html">Social
+<div style="float:right">Next: <a href="social.html">Social
 Event</a></div>
 </div>
 

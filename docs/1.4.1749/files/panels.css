@@ -2,7 +2,7 @@ input[type='text'] {
 	background-color: black;
 	border: 1px solid #666;
 	color: white;
-	padding: 10px 5px;
+	padding: 5px 5px;
 }
 
 select {
@@ -24,7 +24,7 @@ input[type='button'] {
 }
 
 .btn-chunky {
-	padding: 10px 20px !important;
+	padding: 5px 20px !important;
 }
 
 .mt-20 {

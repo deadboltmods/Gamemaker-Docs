@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/More about backgrounds/Texture Pages.html";
+chmtop.c2wtopf.pageid = "dadiospice/001_advanced use/more about backgrounds/texture pages.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20about%20backgrounds%2FTexture%20Pages.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20about%20backgrounds%2FTexture%20Pages.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20backgrounds%2Ftexture%20pages.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20backgrounds%2Ftexture%20pages.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -36,7 +36,7 @@ surely have created graphics to go along with it. These graphics
 are stored on <b>Texture Pages</b> which <i>GameMaker: Studio</i>
 builds for you from all the image resources (backgrounds, tiles and
 sprites) that your game contains. Below is an example of a
-completed texture page: <img class="center" src="TexturePage.png">
+completed texture page: <img class="center" src="texturepage.png">
 As you can see, the game graphics are all jumbled up together in
 such a way that they all fit on a power of 2 sized page, eg
 512x512, 1024x512 etc... up to a maximum size of 2048x2048 pixels
@@ -49,7 +49,7 @@ you for defining how your image resources are stored on these
 texture pages.<br>
 <br>
 <i><b>NOTE:</b> This functionality is limited to the <a href=
-"../../000_Using%20GameMaker/Versions.html">Professional
+"../../000_using%20gamemaker/versions.html">Professional
 Version</a> of</i> GameMaker: Studio.<br>
 <br></p>
 
@@ -57,7 +57,7 @@ Version</a> of</i> GameMaker: Studio.<br>
 
 <p>The sprite resource window and the background resource window
 both have a section titled <b>Texture Settings</b>, shown below:
-<img class="center" src="Texture_Settings.png"> Here you can define
+<img class="center" src="texture_settings.png"> Here you can define
 how the image is to be stored on the texture page as well as
 whether it is an image specifically for use with a 3D object and
 which texture page (if any) it has to be assigned to. The first two
@@ -67,7 +67,7 @@ texture page. An image that is to be tiled will have the edges
 (horizontal or vertical) added to by the edges from the opposite
 side, while if no tiling is selected the sprite will be clamped and
 the edges pixels will be repeated. The following image illustrates
-this: <img class="center" src="ClampTile_Image.png"> Underneath
+this: <img class="center" src="clamptile_image.png"> Underneath
 those settings is the <b>Used for 3D</b> setting. This option is
 only available if the image size is a power of 2 (eg: 128x128 or
 512x512) and it will force <i>GameMaker: Studio</i> to place this
@@ -89,10 +89,10 @@ tell <i>GameMaker: Studio</i> what images are to placed on any
 specific texture page, with the final aim being to minimise the
 number of swaps being done in a game at any one time (texture pages
 can added from the <a href=
-"../Global%20game%20settings/Texture%20Groups%20Tab.html">Global
+"../global%20game%20settings/texture%20groups%20tab.html">Global
 Game Settings: Texture Groups</a> tab). It is also worth noting
 that in the individual platform tabs that can be found in the
-<a href="../Global%20game%20settings/index.html">Global Game
+<a href="../global%20game%20settings/index.html">Global Game
 Settings</a> there is a button that permits you to view the texture
 pages that you have defined, as they would be created for each
 target.<br>
@@ -115,7 +115,7 @@ complete, image.<br>
 various texture pages, you should be aware that this is not always
 necessary, nor is it always the most efficient way to work. Some
 games may be more CPU bound than GPU bound (see <a href=
-"../011_Debugging.html">Advanced Use: Debugging</a>) and those
+"../011_debugging.html">Advanced Use: Debugging</a>) and those
 games will not benefit greatly from this optimisation, and you
 should also consider whether it would not be better to have all
 your images on two texture pages and swap between them rather than

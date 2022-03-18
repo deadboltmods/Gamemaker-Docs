@@ -6,7 +6,7 @@
         <!-- BEGINSETTINGSFLYOUT -->
         <div data-win-control="WinJS.UI.SettingsFlyout" aria-label="App Settings Flyout" data-win-options="{settingsCommandId:'defaults',width:'wide'}">
             <!-- Use either 'win-ui-light' or 'win-ui-dark' depending on the contrast between the header title and background colour -->
-            <div class="win-ui-dark win-header" style="background-color:#00b2f0"> <!-- Background colour reflects app's personality -->
+            <div class="win-ui-dark win-header" style="background-colour:#00b2f0"> <!-- Background colour reflects app's personality -->
                 <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
                 <div class="win-label">Defaults</div>
             </div>

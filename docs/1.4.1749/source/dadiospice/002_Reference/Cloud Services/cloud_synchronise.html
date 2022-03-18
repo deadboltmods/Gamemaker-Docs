@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/002_Reference/Cloud Services/cloud_synchronise.html";
+chmtop.c2wtopf.pageid = "dadiospice/002_reference/cloud services/cloud_synchronise.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_synchronise.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_Reference%2FCloud%20Services%2Fcloud_synchronise.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_reference%2Fcloud%20services%2Fcloud_synchronise.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F002_reference%2Fcloud%20services%2Fcloud_synchronise.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -49,14 +49,14 @@ service.</h2>
 game and is used to retrieve the current status of the cloud
 service at game start up. The function returns a unique <b>id</b>
 value which would then be used in the <a href=
-"../../001_Advanced%20Use/More%20About%20Async%20Events/Cloud.html">
+"../../001_advanced%20use/more%20about%20async%20events/cloud.html">
 Asynchronous Cloud Event</a> to retrieve the relevant information
 from the ds_map that is created.<br>
 <br>
 This function will send off to the cloud for data, which will then
 trigger the appropriate asynchronous event. In this event, you can
 check the returned <tt>async_load</tt> <a href=
-"../Data%20Structures/DS%20Maps/index.html">ds_map</a> for the
+"../data%20structures/ds%20maps/index.html">ds_map</a> for the
 following values:<br>
 <br></p>
 
@@ -139,9 +139,9 @@ it</td>
 <td>3</td>
 <td>resultString = "GameUploadSuccess"</td>
 <td>data from <a href=
-"../Cloud%20Services/cloud_string_save.html"><tt>cloud_string_save</tt></a>
+"../../002_reference/cloud%20services/cloud_string_save.html"><tt>cloud_string_save</tt></a>
 or <a href=
-"../Cloud%20Services/cloud_file_save.html"><tt>cloud_file_save</tt></a>
+"../../002_reference/cloud%20services/cloud_file_save.html"><tt>cloud_file_save</tt></a>
 was successfully uploaded to the cloud</td>
 </tr>
 
@@ -163,7 +163,7 @@ was successfully uploaded to the cloud</td>
 <h3 class="studio">Extended Example:</h3>
 
 <p>This function would be called in an event like the <a href=
-"../../000_Using%20GameMaker/Events/other%20Event.html">Game Start
+"../../000_using%20gamemaker/events/other%20event.html">Game Start
 Event</a> or in an object that is placed in the first room of your
 game, with the idea being that you check the current data blob from
 the cloud server to see if it is up to date or not.</p>

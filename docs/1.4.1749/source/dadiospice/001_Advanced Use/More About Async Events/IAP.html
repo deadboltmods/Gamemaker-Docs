@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/More About Async Events/IAP.html";
+chmtop.c2wtopf.pageid = "dadiospice/001_advanced use/more about async events/iap.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FIAP.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FIAP.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fiap.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fiap.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -32,7 +32,7 @@ if (window.name != "content")
 any IAP call-backs received.</h2>
 
 <p>This event can only be triggered when you have activated
-<a href="../../002_Reference/In%20App%20Purchases/index.html">In
+<a href="../../002_reference/in%20app%20purchases/index.html">In
 App Purchases</a> for your game. If you have this functionality
 added, then the event will be triggered under the following
 circumstances:</p>
@@ -52,7 +52,7 @@ circumstances:</p>
 </blockquote>
 
 <p>The event will always create a special <a href=
-"../../002_Reference/Data%20Structures/DS%20Maps/index.html"><tt>ds_map</tt></a>
+"../../002_reference/data%20structures/ds%20maps/index.html"><tt>ds_map</tt></a>
 with an index ID stored in the built in variable
 <tt><b>iap_data</b></tt>. This map will <i>always</i> contain the
 key "<b>type</b>", which will hold one of the following constant
@@ -81,7 +81,7 @@ contain additional information about the product.</td>
 <tr>
 <td>iap_ev_restore</td>
 <td>This event is only triggered when you use the <a href=
-"../../002_Reference/In%20App%20Purchases/iap_restore_all.html"><tt>
+"../../002_reference/in%20app%20purchases/iap_restore_all.html"><tt>
 iap_restore_all</tt></a> function.</td>
 </tr>
 
@@ -94,7 +94,7 @@ triggered.</td>
 <tr>
 <td>iap_ev_consume</td>
 <td>When you use the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_consume.html"><tt>iap_consume</tt></a>
+"../../002_reference/in%20app%20purchases/iap_consume.html"><tt>iap_consume</tt></a>
 it triggers this event.</td>
 </tr>
 </table>
@@ -149,7 +149,7 @@ expect this event to trigger ten times. If you have received this
 event, the <tt>iap_data</tt> ds_map will hold the additional key
 "<b>index</b>" which holds the unique <b>product ID string</b> for
 the product being activated. You can then use the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_product_details.html">
+"../../002_reference/in%20app%20purchases/iap_product_details.html">
 <tt>iap_product_details</tt></a> along with this product ID to get
 further information.<br>
 <br>
@@ -161,7 +161,7 @@ applications with a significant number of products.</i><br>
 <h3 class="studio">iap_ev_restore</h3>
 
 <p>When you call the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_restore_all.html"><tt>
+"../../002_reference/in%20app%20purchases/iap_restore_all.html"><tt>
 iap_restore_all</tt></a> it will trigger this event, adding a
 "<b>result</b>" key to the <tt>iap_data</tt> ds_map. This key will
 hold either <tt>true</tt> or <tt>false</tt> to indicate whether the
@@ -172,12 +172,12 @@ store.<br>
 <h3 class="studio">iap_ev_purchase</h3>
 
 <p>On requesting a purchase using the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_acquire.html"><tt>iap_acquire</tt></a>
+"../../002_reference/in%20app%20purchases/iap_acquire.html"><tt>iap_acquire</tt></a>
 this event type will be triggered. The <tt>iap_data</tt> ds_map
 will have the additional key "<b>index</b>" which holds the unique
 <b>purchase ID</b> value for the product being purchased. You can
 then use the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_purchase_details.html">
+"../../002_reference/in%20app%20purchases/iap_purchase_details.html">
 <tt>iap_purchase_details</tt></a> along with this purchase ID to
 get further information.<br>
 <br>
@@ -189,7 +189,7 @@ purchase can be made.</i><br>
 <h3 class="studio">iap_ev_consume</h3>
 
 <p>When using the function <a href=
-"../../002_Reference/In%20App%20Purchases/iap_consume.html"><tt>iap_consume</tt></a>
+"../../002_reference/in%20app%20purchases/iap_consume.html"><tt>iap_consume</tt></a>
 this event type will be triggered. The <tt>iap_data</tt> ds_map
 will have the additional key "<b>product</b>" which holds the
 unique <b>product ID</b> string for the product being consumed.<br>
@@ -210,7 +210,7 @@ accessed anywhere else in your game.</i><br>
 <div style="float:left">Back: <a href="index.html">More About Async
 Events</a></div>
 
-<div style="float:right">Next: <a href="Cloud.html">Cloud
+<div style="float:right">Next: <a href="cloud.html">Cloud
 Events</a></div>
 </div>
 

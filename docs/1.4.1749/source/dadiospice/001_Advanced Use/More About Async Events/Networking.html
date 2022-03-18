@@ -16,13 +16,13 @@ media="screen" title="style" charset="utf-8">
 
 <script type="text/JavaScript" src="../../../../files/supply.js"></script>
 <script type="text/JavaScript">
-chmtop.c2wtopf.pageid = "dadiospice/001_Advanced Use/More About Async Events/Networking.html";
+chmtop.c2wtopf.pageid = "dadiospice/001_advanced use/more about async events/networking.html";
 </script>
 
 </head>
 <body><script type="text/JavaScript"> 
 if (window.name != "content") 
-  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FNetworking.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_Advanced%20Use%2FMore%20About%20Async%20Events%2FNetworking.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
+  document.write(" <table width=\"100%\" bgcolor=\"#e1e1e1\"cellspacing=\"2\" cellpadding=\"0\" style=\"border-collapse: collapse; font-family: sans-serif; font-size: 14px; color: #000000; text-decoration: none;  \"> <tr> <td align=\"center\" style=\"border-bottom: 2px solid gray\" > <br>&nbsp;Click <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fnetworking.html\">here</a> to show toolbars of the Web Online Help System: <a href=\"../../../../index.html?page=source%2Fdadiospice%2F001_advanced%20use%2Fmore%20about%20async%20events%2Fnetworking.html\">show toolbars</a><br>&nbsp;</td></tr></table><br> "); 
 </script>
 <!-- !chm2web! -->
 
@@ -33,9 +33,9 @@ when using the networking functions.</h2>
 
 <p>The Networking event is one which will be triggered by any
 incoming network traffic, and is linked to the <a href=
-"../../002_Reference/Networking/index.html">Network Functions</a>.
+"../../002_reference/networking/index.html">Network Functions</a>.
 This event generates a special <a href=
-"../../002_Reference/Data%20Structures/DS%20Maps/index.html">ds_map</a>
+"../../002_reference/data%20structures/ds%20maps/index.html">ds_map</a>
 (more commonly known as a "dictionary") that is exclusive to this
 event and is stored in the special variable <b>async_load</b>. This
 <tt>ds_map</tt> will contain different information depending on the
@@ -56,9 +56,9 @@ as its return value, and designates the network event type.</li>
 
 <li><b>"id":</b> The socket id (a real number, as returned by the
 <a href=
-"../../002_Reference/Networking/network_create_server.html">network_create_server</a>
+"../../002_reference/networking/network_create_server.html">network_create_server</a>
 or <a href=
-"../../002_Reference/Networking/network_create_socket.html">network_create_socket</a>
+"../../002_reference/networking/network_create_socket.html">network_create_socket</a>
 function) that is receiving the event. In most cases the socket ID
 returned is the ID of TCP or UDP socket that triggered the event,
 however if the event is triggered in a <i>server</i> and it's a
@@ -107,7 +107,7 @@ three constants listed below:</p>
 <td>network_type_non_blocking_connect</td>
 <td>The event was triggered by a connection configured as
 non-blocking (you can use the function <a href=
-"../../002_Reference/Networking/network_set_config.html"><tt>network_set_config()</tt></a>
+"../../002_reference/networking/network_set_config.html"><tt>network_set_config()</tt></a>
 for this).</td>
 </tr>
 </table>
@@ -154,7 +154,7 @@ all further function calls to the buffer <i><b>in this
 event</b></i>. Just like the <tt>async_load</tt> map, the buffer
 created is automatically removed from memory at the end of this
 event. For more information on buffers, please see <a href=
-"../../002_Reference/Buffers/index.html">Reference -
+"../../002_reference/buffers/index.html">Reference -
 Buffers</a></li>
 
 <li style="list-style: none"><br>
@@ -182,7 +182,7 @@ freed when the event is over.</i><br>
 <div style="float:left">Back: <a href="index.html">More About Async
 Events</a></div>
 
-<div style="float:right">Next: <a href="Steam.html">Steam
+<div style="float:right">Next: <a href="steam.html">Steam
 Event</a></div>
 </div>
 
