@@ -1,5 +1,7 @@
 <html>
     <head>
+<meta name="robots" content="noindex,nofollow">
+
         <title>App settings flyout</title>
     </head>
     <body>
