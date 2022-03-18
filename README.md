@@ -53,7 +53,7 @@ Once you've got your extension set up, redirect this:
 
 To your own hosted docs, eg to redirect to mine:
 
-`https://files.codemuffin.com/gamemaker/docs/1.4.1749`
+`https://files.codemuffin.com/gamemaker/docs/1.4.1749/source/dadiospice`
 
 Test page to try redirects:
 
@@ -61,6 +61,6 @@ Test page to try redirects:
 
 It should take you here:
 
-[https://files.codemuffin.com/gamemaker/docs/1.4.1749/dadiospice/001_advanced use/more about sprites/editing collision masks.html](https://files.codemuffin.com/gamemaker/docs/1.4.1749/dadiospice//001_advanced%20use/more%20about%20sprites/editing%20collision%20masks.html)
+[https://files.codemuffin.com/gamemaker/docs/1.4.1749/source/dadiospice/001_advanced use/more about sprites/editing collision masks.html](https://files.codemuffin.com/gamemaker/docs/1.4.1749/source/dadiospice/001_advanced%20use/more%20about%20sprites/editing%20collision%20masks.html)
 
 Note that if you've already visited a URL and got redirected to the new docs site, you browser will have cached that rediect. To fix it, just open developer tools (F12), click the Network tab, check "Disable cache", then enter the URL while dev tools is still open.
