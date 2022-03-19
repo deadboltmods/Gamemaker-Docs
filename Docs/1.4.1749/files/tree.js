@@ -134,7 +134,20 @@ function FIt (b_deselect) {
         }
         var o_iicon = document.images['i_img' + this.n_id];
         if (o_iicon) o_iicon.src = this.get_icon();
-        get_element('i_txt' + this.n_id).style.fontWeight = b_deselect ? 'normal' : 'bold';
+
+        // get_element('i_txt' + this.n_id).style.fontWeight = b_deselect ? 'normal' : 'bold';
+
+        var clickedItem = get_element('i_txt' + this.n_id);
+
+        if ( b_deselect )
+        {
+                clickedItem.classList.remove( 'is-active-menu-item' );
+        }
+        else
+        {
+                clickedItem.classList.add( 'is-active-menu-item' );
+        }
+
         return Boolean(this.a_prop[1]);
 }
 
@@ -194,7 +207,7 @@ function IIt () {
 
         return '<a name="#i_txt' + this.n_id + '"></a><table cellpadding="0" cellspacing="0" border="0"><tr><td nowrap>' +
              a_offset.join('') + (this.a_childs.length ?
-             (b_safemode ? '' : '<a href="javascript: trees[' + this.o_root.n_id + '].toggle(' + this.n_id +
+             (b_safemode ? '' : '<a class="menu-tree__gfx" href="javascript: trees[' + this.o_root.n_id + '].toggle(' + this.n_id +
              ')" >') + '<img src="' + this.get_icon(true) + '" border="0" align="absbottom" name="j_img' + this.n_id +
              '">' +
              (b_safemode ? '' : '</a>') : '<img src="' + this.get_icon(true) +
@@ -203,11 +216,11 @@ function IIt () {
              '" target="' + licons['target'] + '"' +
              ' onclick="return trees[' + this.o_root.n_id + '].select(' + this.n_id + ');" ' +
              (b_safemode ? '' : ' ondblclick="trees[' +
-             this.o_root.n_id + '].toggle(' + this.n_id + ')"') + ' class="t0i" id="i_txt' +
+             this.o_root.n_id + '].toggle(' + this.n_id + ')"') + ' class="t0i menu-tree__link" id="i_txt' +
              this.n_id + '"><img src="' + this.get_icon() + '" border="0" align="absbottom" name="i_img' +
              this.n_id + '" class="t0im">&nbsp;' +
              this.a_prop[0] + '</td></tr></table>' + (this.a_childs.length ?
-             '<div id="divtree' + this.n_id + '" style="display:none"></div>' : '');
+             '<div class="menu-tree" id="divtree' + this.n_id + '" style="display:none"></div>' : '');
 
 }
 

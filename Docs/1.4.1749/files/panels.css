@@ -30,3 +30,20 @@ input[type='button'] {
 .mt-20 {
 	margin-top: 20px;
 }
+
+.is-active-menu-item {
+	color: #75B73D !important;
+	font-weight: bold;
+}
+
+.menu-tree {
+	padding: 5px;
+}
+
+/* also: .t0i */
+.menu-tree__link {
+	display: inline-block;
+	/* line-height: 1.8; */
+	/* padding: 1px; */
+	font-size: 12px !important;
+}
